@@ -83,12 +83,12 @@ static NSOperationQueue *_LFQueue;
                         data:(NSData *)data
                        onFailure:(void (^)(NSError *))failure
 {
-    NSParameterAssert(resp != nil);
-    
     if (err) {
         failure(err);
         return nil;
     }
+    
+    NSParameterAssert(resp != nil);
     
     NSError *JSONerror;
     NSDictionary *payload  = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&JSONerror];
