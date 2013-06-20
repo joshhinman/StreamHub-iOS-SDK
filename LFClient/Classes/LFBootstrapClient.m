@@ -66,12 +66,6 @@
     NSParameterAssert(pageIndex != NSNotFound);
     NSParameterAssert(initInfo != nil);
     
-    // If page index is zero we already have the content as part of the init data.
-    if (!pageIndex) {
-        success([initInfo objectForKey:@"headDocument"]);
-        return;
-    }
-    
     NSUInteger nPages = [[initInfo valueForKeyPath:@"collectionSettings.archiveInfo.nPages"] integerValue];
     
     if (pageIndex >= nPages) {
