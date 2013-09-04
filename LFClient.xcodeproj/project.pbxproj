@@ -323,7 +323,7 @@
 		1C4CC87816A48B3800C33DEC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Livefyre;
 			};
 			buildConfigurationList = 1C4CC87B16A48B3800C33DEC /* Build configuration list for PBXProject "LFClient" */;
